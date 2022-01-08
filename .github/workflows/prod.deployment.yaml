@@ -21,6 +21,6 @@ jobs:
           scp_target: /var/www/${{secrets.SERVER_FOLDER_LOCATION}}
           before_script: |
             mkdir -p "/var/www/${{secrets.SERVER_FOLDER_LOCATION}}"
-            find /var/www/${{secrets.SERVER_FOLDER_LOCATION}} -mindepth 1 ! -mindepth 1 ! -name '.env' -delete
+            find /var/www/${{secrets.SERVER_FOLDER_LOCATION}} -type f -not -name '*.env'-delete
           after_script: |
             docker-compose /var/www/${{secrets.SERVER_FOLDER_LOCATION}} up -d

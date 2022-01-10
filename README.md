@@ -2,7 +2,7 @@
 
 > This project is just a base to automatically publish in a ubuntu server the nginx-proxy-manager using github workflows.
 
-# Nginx proxy manager original documentation
+# Nginx proxy manager official documentation
 > https://github.com/jc21/nginx-proxy-manager
 
 ## Github project environment variables
